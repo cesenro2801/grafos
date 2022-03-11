@@ -494,7 +494,7 @@ graph = {
 def dijkstra(graph, start, goal):
     shortest_distance = {}
     track_predecessor = {}
-    unseenNodes = graph
+    unseenNodes = graph.copy()
     infinity = 999999
     track_path = []
 
@@ -540,6 +540,11 @@ def dijkstra(graph, start, goal):
     if shortest_distance[goal] != infinity:
         print("La distancia más corta es " + str(shortest_distance[goal]))
         print("Camino óptimo" + str(track_path))
+        print('')
 
 
+dijkstra(graph, 'porteria carrera 25', 'P1')
+dijkstra(graph, 'porteria carrera 25', 'P2')
+dijkstra(graph, 'porteria carrera 25', 'P3')
 dijkstra(graph, 'porteria carrera 25', 'P4')
+dijkstra(graph, 'porteria carrera 25', 'cancha 1 marzo')
