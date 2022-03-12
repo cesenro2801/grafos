@@ -4,44 +4,44 @@ from readline import insert_text
 
 graph = {
     'cenivam': {
-        'N23': 1
+        'N23': 83
     },
     'N23': {
-        'cenivam': 1,
-        'N22': 1
+        'cenivam': 83,
+        'N22': 78
     },
     'N22': {
-        'diamante de softbol': 1,
-        'N21': 1,
-        'porteria carrera 30': 1
+        'diamante de softbol': 95,
+        'N21': 30,
+        'porteria carrera 30': 43
     },
     'diamante de softbol': {
-        'N22': 1,
-        'N21': 1
+        'N22': 95,
+        'N21': 82
     },
     'porteria carrera 30': {
-        'N22': 1,
-        'coliseo': 1,
-        'N29': 1
+        'N22': 43,
+        'coliseo': 69,
+        'N29': 120
     },
     'N21': {
-        'diamante de softbol': 1,
-        'N22': 1,
-        'recidencias universitarias': 1,
-        'coliseo': 1
+        'diamante de softbol': 82,
+        'N22': 95,
+        'recidencias universitarias': 61,
+        'coliseo': 44
     },
     'recidencias universitarias': {
-        'N21': 1,
-        'N20': 1
+        'N21': 61,
+        'N20': 25
     },
     'kiosco residencias': {
-        'N20': 1
+        'N20': 32
     },
     'N20': {
-        'recidencias universitarias': 1,
-        'kiosco residencias': 1,
-        'N28': 1,
-        'N19': 1,
+        'recidencias universitarias': 25,
+        'kiosco residencias': 25,
+        'N28': 120,
+        'N19': 42,
         'coliseo': 1
     },
     'coliseo': {
@@ -543,7 +543,7 @@ def dijkstra(graph, start, goal):
         print('')
 
 
-dijkstra(graph, 'porteria carrera 25', 'P1')
+dijkstra(graph, 'canchas de tenis', 'facultad ing. fisicomecanicas')
 dijkstra(graph, 'porteria carrera 25', 'P2')
 dijkstra(graph, 'porteria carrera 25', 'P3')
 dijkstra(graph, 'porteria carrera 25', 'P4')
